@@ -120,12 +120,11 @@
         <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="Data">
-                <p>Image Name: {{ form.Image_Name }}</p>
                 <p>Starting Index: {{ form.Starting_Index }}</p>
                 <p>Ghap: {{ form.Ghap }}</p>
                 <p>Add a Value: {{ form.Add_a_Value }}</p>
                 <p>Data Will be Hidden: {{ form.HiddenData }}</p>
-                <p>Storage Image: {{ form.DataImage }}</p>
+                <p>Enter Saving Path: {{ form.SavingPath }}</p>
             </div>
             <input class="Submit" type="submit" value="Submit">
         </form>

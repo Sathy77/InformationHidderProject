@@ -32,6 +32,7 @@ urlpatterns = [
     path('profile', ProfileManagementviews.profilePage, name="profile"),
     path('encode', Encodeviews.encodePage, name="encode"),
     path('decode', Decodeviews.decodePage, name="decode"),
+    path('showdata', Decodeviews.showdata, name="showdata"),
     path('accounts/', include('django.contrib.auth.urls'))
 ]
 if settings.DEBUG:
